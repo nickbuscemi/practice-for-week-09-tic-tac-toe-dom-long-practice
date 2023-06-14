@@ -1,1 +1,67 @@
-/* Your code here */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial', Arial, sans-serif;
+  }
+  
+  #board {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 600px;
+    height: 600px;
+  }
+  
+  .square {
+    border: 1px solid black;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+#r0-c0,
+#r0-c2,
+#r2-c0,
+#r2-c2 {
+    border: none;
+}
+
+#r0-c1,
+#r2-c1 {
+    border-top: none;
+    border-bottom: none;
+}
+
+#r1-c0,
+#r1-c2 {
+    border-left: none;
+    border-right: none;
+}
+  
+  #options {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin-top: 20px;
+  }
+  
+  .button {
+    background-color: lightblue;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .display-winner {
+    margin: 20px 0;
+  }
+  .square img {
+    max-height: 50%;
+    max-width: 50%;
+    object-fit: contain; /* This ensures that the aspect ratio is maintained */
+}
+  
